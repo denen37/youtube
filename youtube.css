@@ -1,0 +1,154 @@
+.navbar{
+    height: 60px;
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+.middle-section{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 660px){
+    .middle-section{
+        display: none;
+    }
+    .right-section>.search-icon-btn, .right-section>.mic-btn{
+        display: block;
+    }
+}
+.right-section{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    padding-right: 20px;
+}
+
+.sidebar-btn, .mic-btn, .create-video-btn, .notification-btn, .user-profile-btn, .search-icon-btn{
+    font-size: 22px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-left: 10px;
+    margin-right: 1px;
+}
+
+.user-profile-btn{
+    height: 35px;
+    width: 35px;
+    border-radius: 22px;
+    background-image: url(images/awar-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+}
+
+.middle-section .mic-btn{
+    background-color: rgb(231, 229, 229);
+}
+
+.right-section .mic-btn{
+    background-color: none;
+    display: none;
+}
+.right-section .search-icon-btn{
+    display: none;
+}
+.mic-btn:hover{
+    background-color: rgb(220, 220, 220);
+}
+
+.sidebar-btn:hover, .create-video-btn:hover, .notification-btn:hover, .search-icon-btn:hover, .right-section .mic-btn:hover{
+    background-color: rgb(224, 222, 222);
+}
+
+.search-icon-btn>img{
+    width: 30px;
+}
+
+.create-video-btn>img{
+    width: 30px;
+}
+
+.notification-btn>img{
+    width: 30px;
+}
+
+.youtube-logo{
+    width: 110px;
+}
+.home-btn{
+    cursor: pointer;
+}
+.border{
+    border: 2px solid blue;
+}
+
+.search-div{
+    display: flex;
+    height: 50px;
+    flex: 1;
+    max-width: 600px;
+}
+
+.search-txt{
+    font-size: 20px;
+    padding: 12px  15px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    flex: 1;
+    min-width: 0 !important;
+    width: auto;
+}
+
+.search-txt:focus{
+   outline: none;
+   border-color: blue;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+   background-image: url(images/search-icon.png);
+   background-position: left;
+   background-size: 35px;
+   background-repeat: no-repeat;
+   background-position-x: 12px;
+   padding-left: 50px;
+}
+
+.search-txt::placeholder{
+    opacity: 0.7;
+}
+
+.search-btn{
+    border: 1px solid lightgray;
+    padding: 1px 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(247, 245, 245);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-btn:hover{
+    background-color: rgb(240, 240, 240);
+}
+.search-btn>img{
+    width: 40px;
+}
